@@ -16,17 +16,15 @@ app.use(routes)
 client.connect();
 
 client.on('ready', () => {
-console.log('connected');
-app.listen(3000,(err)=>{
+app.listen(3001,(err)=>{
     if(err){
         console.info('Error on spin up service')
         throw new Error(err)
     }
-    console.info('Server running on PORT ',3000)
+    console.info('Server running on PORT ',3001)
 })
 });
 client.on('error', (err) => {
-    console.log('error');
     console.error(err);
 });
 

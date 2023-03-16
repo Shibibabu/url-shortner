@@ -20,7 +20,6 @@ router.post("/", async (req, res) => {
       return sendFailedResponse(res,"invalid body");
     }
     let valid=validateURL(url)
-    console.log("valid",valid);
     if (!valid) {
       return sendFailedResponse(res,"invalid url");
     }
@@ -33,7 +32,6 @@ router.post("/", async (req, res) => {
       urlhash: hash,
     });
   } catch (error) {
-    console.log("error",error);
     sendInternalServerErrorResponse(res, error);
   }
 });

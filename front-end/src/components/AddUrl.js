@@ -17,7 +17,7 @@ const AddUrl = () => {
     }
 
     axios
-      .post("http://localhost:3000/", { url })
+      .post("http://localhost:3001/", { url })
       .then(res => {
         setHashedurl(res.data.urlhash)
       
@@ -30,7 +30,7 @@ const AddUrl = () => {
   };
   const fetchOriginalUrl = async () => {
     setError("")
-    window.open(`http://localhost:3000/${hashedurl}`, '_blank');
+    window.open(`http://localhost:3001/${hashedurl}`, '_blank');
   };
   const handleValue =(value)=>{
     setUrl(value);
@@ -59,7 +59,7 @@ const AddUrl = () => {
             {hashedurl && hashedurl.length>0 && 
             <div className="bottom-div">
              <p>Short url </p>
-             <div onClick={fetchOriginalUrl} className="go-to-url"> <a href={`http://localhost:3000/${hashedurl}`} target="_blank">{`shbt/${hashedurl}`}</a></div>
+             <div onClick={fetchOriginalUrl} className="go-to-url"> <a href={`http://localhost:3001/${hashedurl}`} target="_blank">{`shbt/${hashedurl}`}</a></div>
             </div>}
             {error && error.length>0 && <p className="text-danger">{error}</p>}
           </form>
