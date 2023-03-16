@@ -1,0 +1,54 @@
+.form-div{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.contents{
+display: flex;
+align-content: center;
+align-items: center;
+width: 70%;
+justify-content: space-evenly;
+max-width: 30rem;
+}
+
+.custom-input{
+height: 3rem;
+width: 18rem;
+border-radius: 14px;
+padding-left: 1rem;
+}
+
+.form-submit-btn{
+height: 3rem;
+width: 6rem;
+background: teal;
+border-radius: 5px;
+color: white;
+font-size: 15px;
+}
+
+.main-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  
+}
+
+.bottom-div{
+display: flex;
+align-items: center;
+margin-top: 1rem;
+}
+
+.go-to-url{
+    margin-left: 2rem;
+}
+.text-danger{
+    color: red;
+}
