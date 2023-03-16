@@ -12,7 +12,7 @@ const AddUrl = () => {
     e.preventDefault();
     setError("");
     if (!url) {
-      alert("please enter something");
+      alert("URL is required");
       return;
     }
 
